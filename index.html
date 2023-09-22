@@ -1,0 +1,156 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:title" content="portfolio top" />
+<meta property="og:description" content="奴留湯あやのポートフォリオサイトです" />
+<meta property="og:site_name" content="portfolio" />
+<meta property="og:image" content="images/portfolio_pc_og.png" />
+<meta name="viewport" content="width=device-width">
+<title>portfolio</title>
+<link rel="stylesheet" href="css/destyle.min.css" media="all">
+<link rel="stylesheet" href="css/style.css" media="all">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body id="top">
+<div id="cursor" class="cursor"></div>
+  <div class="lottie__bg">
+    <lottie-player id="lottie" src="https://lottie.host/25cd5875-30ed-4b4d-8247-688b1ac28845/FjQFRdzYIa.json" background="transparent" speed="1" autoplay></lottie-player>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded',()=> {
+
+	const top = document.getElementById("top");
+    const lottie_appear = document.querySelector('.lottie__bg');
+
+    lottie_appear.classList.add("lottie__appear");
+	top.classList.add("scrolling__appear");
+
+    setTimeout(() => logging(), 1000)
+
+        function logging (){
+		  top.classList.remove("scrolling__appear");
+          lottie_appear.classList.remove("lottie__appear");
+      };
+  });
+  </script>
+  <header>
+    <div class="menu__box">
+      <div class="menu__flex menu__open">
+        <div id="menu__drawer--input" class="menu__drawer--open menu__open"><span class="drawer__input__span menu__open"></span></div>
+        <p class="menu__title menu__open">menu</p>
+      </div>
+      <div class="menu__nav menu__open">
+        <div class="nav__bg menu__open"><img src="images/menuall.png" alt="" class="nav__bg__img"></div>
+        <nav class="nav__position">
+          <ul class="nav__list">
+            <li class="nav__list__li"><a class="nav__item" href="#top">top</a></li>
+            <li class="nav__list__li"><a class="nav__item" href="#about">about</a></li>
+            <li class="nav__list__li"><a class="nav__item" href="#skill">skill</a></li>
+            <li class="nav__list__li"><a class="nav__item" href="worktop.html">works</a></li>
+            <li class="nav__list__li"><a class="nav__item" href="#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="menu__bg" class=" menu__open"></div>
+  <!-- header -->
+  <!-- loadanime -->
+<main>
+  <div class="name__bg__relative">
+    <div class="name__bg"></div>
+    <h1 id="name">
+      <img src="images/namelogo.svg" alt="奴留湯あや" id="name__img">
+    </h1>
+  </div>
+  <!-- mv_name -->
+  <div class="scroll mt-200">
+    <p class="scroll__text">Scroll&nbsp;For&nbsp;Me</p>
+    <div class="icon__right__scrolldown"></div>
+  </div>
+  <div id="icon__right__return--button">
+    <p class="return__button__text"><a href="#top" class="return__button__link">Top</a></p>
+  </div>
+  <!-- scroll -->
+  <section class="workindex display--action">
+    <h2 class="about__headline">work</h2>
+    <div class="workindex__box">
+      <div class="workindex__text">
+        <h3 class="workindex__text__headline">和菓子屋架空サイト</h3>
+        <div class="workindex__text--p mt-30">
+          <div class="workindex__1__tag">
+            <p>#WEB</p>
+            <p>#デザイン</p>
+          </div>
+        </div>
+      </div>
+      <a href="work1.html" class="workindex__image__box workindex__image__box__r"><img src="images/wagashi_pc_midashi.png" alt="カフェオープンチラシ" class="workindex__img__1"></a>
+    </div>
+    <button class="workindex__button"><a href="worktop.html" class="workindex__button__link">more</a></button>
+    </section>
+  <!-- workindex -->
+  <section id="about" class="about display--action">
+    <h2 class="about__headline">about</h2>
+    <div class="about__text">
+    <p class="about__mintitle">経歴</p>
+      <p class="about__mintext">2023年6月から10月までの4ヶ月間<br>
+      職業訓練校でwebと広告デザインを学習。</p>
+    <p class="about__mintitle">好き</p>
+      <p class="about__mintext">優しい色合いを使ったシンプルなデザインが好きです。</p>
+    <p class="about__mintitle">その他</p>
+      <p class="about__mintext">After EffectsやPremiere Pro、Blenderなど興味をもった分野を幅広く学習中。<br>
+      ちょっとしたイラストや筆文字も制作可能です。</p>
+      </div>
+  </section>
+  <!-- about -->
+  <section id="skill" class="skill display--action">
+    <h2 class="about__headline">skill</h2>
+    <ul class="skill__text">
+      <li>
+        <h3 class="skill__text__headline">Photoshop</h3>
+        <p class="skill__text__content">サーティファイ主催Photoshopクリエイター認定試験スタンダード合格</p>
+      </li>
+      <li>
+        <h3 class="skill__text__headline">Illustrator</h3>
+        <p class="skill__text__content">サーティファイ主催illustratorクリエイター認定試験スタンダード合格</p>
+      </li>
+      <li>
+        <h3 class="skill__text__headline">XD</h3>
+        <p class="skill__text__content">独学でコンポーネントまで使用可能</p>
+      </li>
+      <li>
+        <h3 class="skill__text__headline">Dreamweaver</h3>
+        <p class="skill__text__content">サーティファイ主催Webクリエイター能力認定試験エキスパート合格</p>
+      </li>
+      <li>
+        <h3 class="skill__text__headline">HTML</h3>
+        <p class="skill__text__content">基本的な意味づけ可能</p>
+      </li>
+      <li>
+        <h3 class="skill__text__headline">CSS</h3>
+        <p class="skill__text__content">基本的な配置可能</p>
+      </li>
+      <li>
+        <h3 class="skill__text__headline">js</h3>
+        <p class="skill__text__content">学習中/作品に使用しているjsは基本的に理解しています</p>
+      </li>
+    </ul>
+  </section>
+  <!-- skill -->
+  <section id="contact" class="contact display--action">
+    <h2 class="about__headline">contact</h2>
+    <p class="contact__text">
+      <a href="mailto:aya.nu0902@gmail.com" class="contact__text__link">aya.nu0902@<span class="contact__text__link__span">gmail.com↗</span></a>
+    </p>
+  </section>
+</main>
+  <!-- contact -->
+  <footer>
+    <p>All&nbsp;Rights&nbsp;Reserved<span class="footer__text">&nbsp;2023&copy;AYA&nbsp;NURUYU</span></p>
+  </footer>
+  <!-- footer -->
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+</body>
+</html>

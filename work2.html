@@ -1,0 +1,113 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8">
+<meta property="og:title" content="portfolio work" />
+<meta property="og:description" content="奴留湯あやのポートフォリオサイトです" />
+<meta property="og:site_name" content="portfolio" />
+<meta property="og:image" content="images/portfolio_pc_og.png" />
+<meta name="viewport" content="width=device-width">
+<title>portfolio-worksample-</title>
+<link rel="stylesheet" href="css/destyle.min.css" media="all">
+<link rel="stylesheet" href="css/style.css" media="all">
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body id="top">
+<div id="cursor" class="cursor"></div>
+  <div class="lottie__bg">
+    <lottie-player id="lottie" src="https://lottie.host/25cd5875-30ed-4b4d-8247-688b1ac28845/FjQFRdzYIa.json" background="transparent" speed="1" autoplay></lottie-player>
+  </div>
+  <script>
+  document.addEventListener('DOMContentLoaded',()=> {
+
+	const top = document.getElementById("top");
+    const lottie_appear = document.querySelector('.lottie__bg');
+
+    lottie_appear.classList.add("lottie__appear");
+	top.classList.add("scrolling__appear");
+
+    setTimeout(() => logging(), 1000)
+
+        function logging (){
+		  top.classList.remove("scrolling__appear");
+          lottie_appear.classList.remove("lottie__appear");
+      };
+  });
+  </script>
+  <header>
+    <div class="menu__box">
+      <div class="menu__flex menu__open">
+        <div id="menu__drawer--input" class="menu__drawer--open menu__open"><span class="drawer__input__span menu__open"></span></div>
+        <p class="menu__title menu__open">menu</p>
+      </div>
+      <div class="menu__nav menu__open">
+        <div class="nav__bg menu__open"><img src="images/menuall.png" alt="" class="nav__bg__img"></div>
+        <nav class="nav__position">
+          <ul class="nav__list">
+            <li class="nav__list__li"><a class="nav__item" href="index.html#top">top</a></li>
+            <li class="nav__list__li"><a class="nav__item" href="index.html#about">about</a></li>
+            <li class="nav__list__li"><a class="nav__item" href="index.html#skill">skill</a></li>
+            <li class="nav__list__li"><a class="nav__item" href="worktop.html">works</a></li>
+            <li class="nav__list__li"><a class="nav__item" href="index.html#contact">contact</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  <div id="menu__bg" class=" menu__open"></div>
+<!-- header -->
+<div id="icon__right__return--button">
+    <p class="return__button__text"><a href="#top" class="return__button__link">Top</a></p>
+  </div>
+<!-- top -->
+<main>
+  <div class="work__box">
+    <h1 class="work__headline">カフェオープンチラシ</h1>
+    <div class="work__flex work__flex2">
+      <p class="work__position"><img src="images/cafe_open.png" alt="カフェオープンチラシ画像" class="work2__main__img"></p>
+      <div class="work__text">
+        <p class="work__tool">Photoshop/Illustrator</p>
+        <ul class="work__information">
+          <li class="work__information__box">
+            <h2 class="work__information__box__headline">クライアント</h2>
+            <p class="work__information__box__text">架空店舗<br>CAFEcheese店主</p>
+          </li>
+          <li class="work__information__box">
+            <h2 class="work__information__box__headline">担当範囲</h2>
+            <p class="work__information__box__text">デザイン/作成</p>
+          </li>
+          <li class="work__information__box">
+            <h2 class="work__information__box__headline">制作期間</h2>
+            <p class="work__information__box__text">1週間</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <p class="work__content">新規オープンするのでまわりに知っていただけるようにチラシを作製することになりました。<br>
+一押しのチーズケーキの写真をメインにおいしく見えるようレタッチは大切にしました。
+    </p>
+  </div>
+  <div class="work__text3 work__text3__2">
+    <div class="work__points">
+      <h2 class="work__points__headline">よかった点</h2>
+      <p class="work__points__text">レタッチがうまくいき、おいしそうに見える色合いになったかと思います。<br>
+InstagramのQRコードを配置したことで興味がある方により簡単に追加の情報を見てもらえるようになったかと思います。
+      </p>
+    </div>
+    <div class="work__points">
+      <h2 class="work__points__headline">改善点</h2>
+      <p class="work__points__text">チーズケーキの色合いは綺麗になりましたが、そちらに最初の視線が行ってしますためより重要なGRAND OPENの情報の印象が若干薄れてしまいました。<br>
+制作前に情報の優先度づけをしっかりとしておく必要があります。
+      </p>
+    </div>
+  </div>
+</main>
+  <!-- contact -->
+  <footer class="footer2">
+    <p>All&nbsp;Rights&nbsp;Reserved<span class="footer__text">&nbsp;2023&copy;AYA&nbsp;NURUYU</span></p>
+  </footer>
+  <!-- footer -->
+  <script type="text/javascript" src="javascript/javascript.js"></script>
+</body>
+</html>
