@@ -104,10 +104,6 @@ window.onload = function() {
   opacity_2.classList.add('opacity-0');
   opacity_3.classList.add('opacity-0');
   }
-  let cursor_none = document.querySelectorAll('a, body, button, html');
-for (let a = 0; a < link.length; a++) {
-	cursor_none[a].classList.add('cursor_none');
-	};
 }
 
 
@@ -143,10 +139,15 @@ const worktopAppears = document.querySelectorAll(".worktop__image__box__js");
 //カーソル変更
 
 const cursor = document.getElementById('cursor');
-
+const windowSize = window.innerWidth;
+let cursor_none = document.querySelectorAll('a, body, button, html');
+if (windowSize > 768) {
 document.addEventListener('mousemove', function (e) {
-	cursor.style.opacity = .5;
+	  cursor.style.opacity = .5;
     cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+    for (let a = 0; a < link.length; a++) {
+      cursor_none[a].classList.add('cursor_none');
+      };
 });
 
 let link = document.querySelectorAll('a, .menu__drawer--open');
@@ -157,4 +158,5 @@ for (let i = 0; i < link.length; i++) {
     link[i].addEventListener('mouseout', function (e) {
         cursor.classList.remove('cursor--hover');
     });
+}
 }

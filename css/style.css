@@ -65,7 +65,10 @@ a.cursor_none {
 	overflow: hidden;
 }
 
-@media only screen and (max-width: 576px){
+@media only screen and (max-width: 597px){
+    body{
+        font-size: 14px;
+    }
 }
 
 .mt-300{
@@ -367,7 +370,10 @@ header{
 	.menu__title{
 		display: none;
 	}
+    .menu__flex{
+        background-color: rgba(180, 184, 189, .6);
 
+    }
 }
 
 /* loadanime */
@@ -663,6 +669,7 @@ header{
 	font-size: 24px;
 	color: #888;
 	border-bottom: 1px solid #fff;
+    margin-top: 10px;
 	margin-bottom: 5px;
 	line-height: 1.2;
 }
@@ -1116,6 +1123,17 @@ footer{
 		margin-top: 150px
 	}
 }
+@media only screen and (max-width: 425px){
+    .worktop__box1{
+        padding: 0;
+    }
+    .worktop__box{
+        padding: 0;
+    }
+    .worktop__text__headline__span1{
+        display: block;
+    }
+}
 
   /* work1*/
 /*-----------------------------------------------------------*/
@@ -1264,17 +1282,30 @@ footer{
 		margin-left: auto;
 		margin-right: auto;
 	}
+    .work__headline{
+        width: 310px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 
 @media only screen and (max-width: 597px){
+    .work__box{
+        padding-top: 100px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
     .work1__main__img{
-		width: 350px;
+		max-width: 350px;
+        width: 100%;
 	}
     .worktop__img{
         aspect-ratio: 1 / 1;
     }
     .work__text{
-		width: 350px;
+		max-width: 350px;
+        width: 100%;
 	}
     .work__tool,
     .work__information{
@@ -1283,7 +1314,8 @@ footer{
         margin-right: auto;
     }
     .work__points__text{
-		width: 350px;
+		max-width: 350px;
+        width: 100%;
 		margin-left: auto;
 		margin-right: auto;
 	}
