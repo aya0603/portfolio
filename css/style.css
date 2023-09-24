@@ -372,7 +372,11 @@ header{
 	}
     .menu__flex{
         background-color: rgba(180, 184, 189, .6);
-
+    }
+}
+@media only screen and (max-width: 597px){
+    .menu__flex{
+        top: -40px;
     }
 }
 
@@ -711,7 +715,6 @@ header{
 
 @media only screen and (max-width: 576px){
 	.about{
-		font-size: 16px;
 		margin-top: 150px;
 	}
 }
@@ -756,6 +759,12 @@ header{
 	.skill{
 		margin-top: 150px;
 	}
+}
+
+@media only screen and (max-width: 850px){
+    .skill__text__content{
+        font-size: 13px;
+    }
 }
 
 /* contact */
@@ -1113,6 +1122,9 @@ footer{
 }
 
 @media only screen and (max-width: 540px){
+    .worktop__text__headline{
+        font-size: 20px;
+    }
 	.worktop__text__headline__span{
 		display: block;
 	}
@@ -1147,6 +1159,13 @@ footer{
 
 .work__flex{
     margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+}
+
+.work__flex2{
+    margin-top: 80px;
     display: flex;
     justify-content: space-between;
     gap: 5vw;
@@ -1265,7 +1284,11 @@ footer{
 		width: 390px;
 	}
 	.work__flex{
-		margin-top: 100px;
+		margin-top: 80px;
+		display: block;
+	}
+    .work__flex2{
+		margin-top: 40px;
 		display: block;
 	}
 	.work__text{
@@ -1292,7 +1315,7 @@ footer{
 
 @media only screen and (max-width: 597px){
     .work__box{
-        padding-top: 100px;
+        padding-top: 70px;
         padding-left: 10px;
         padding-right: 10px;
     }
@@ -1487,6 +1510,9 @@ footer{
 	.workindex__box{
 		height: 450px;
 	}
+    .workindex__text__headline{
+        font-size: 20px;
+    }
 }
 
 /* work2 */
@@ -1503,4 +1529,10 @@ footer{
 
 .work__text3__2{
 	margin-top:100px;
+}
+
+@media only screen and (max-width: 597px){
+    .work2__main__img{
+        width: 70vw;
+    }
 }
