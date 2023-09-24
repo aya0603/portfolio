@@ -1,45 +1,48 @@
 <!DOCTYPE HTML>
 <html>
+
 <head>
-<meta charset="utf-8">
-<meta property="og:title" content="portfolio work詳細" />
-<meta property="og:description" content="奴留湯あやのポートフォリオサイトです" />
-<meta property="og:site_name" content="portfolio" />
-<meta property="og:image" content="images/portfolio_pc_og.png" />
-<meta name="viewport" content="width=device-width">
-<title>portfolio-worktop-</title>
-<link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
-<link rel="stylesheet" href="css/destyle.min.css" media="all">
-<link rel="stylesheet" href="css/style.css" media="all">
-<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+  <meta charset="utf-8">
+  <meta property="og:title" content="portfolio work詳細" />
+  <meta property="og:description" content="奴留湯あやのポートフォリオサイトです" />
+  <meta property="og:site_name" content="portfolio" />
+  <meta property="og:image" content="images/portfolio_pc_og.png" />
+  <meta name="viewport" content="width=device-width">
+  <title>portfolio-worktop-</title>
+  <link rel="icon" type="image/x-icon" href="favicon/favicon.ico">
+  <link rel="stylesheet" href="css/destyle.min.css" media="all">
+  <link rel="stylesheet" href="css/style.css" media="all">
+  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </head>
 
 <body id="top">
-<div id="cursor" class="cursor"></div>
+  <div id="cursor" class="cursor"></div>
   <div class="lottie__bg">
-    <lottie-player id="lottie" src="https://lottie.host/25cd5875-30ed-4b4d-8247-688b1ac28845/FjQFRdzYIa.json" background="transparent" speed="1" autoplay></lottie-player>
+    <lottie-player id="lottie" src="https://lottie.host/25cd5875-30ed-4b4d-8247-688b1ac28845/FjQFRdzYIa.json"
+      background="transparent" speed="1" autoplay></lottie-player>
   </div>
   <script>
-  document.addEventListener('DOMContentLoaded',()=> {
+    document.addEventListener('DOMContentLoaded', () => {
 
-	const top = document.getElementById("top");
-    const lottie_appear = document.querySelector('.lottie__bg');
+      const top = document.getElementById("top");
+      const lottie_appear = document.querySelector('.lottie__bg');
 
-    lottie_appear.classList.add("lottie__appear");
-	top.classList.add("scrolling__appear");
+      lottie_appear.classList.add("lottie__appear");
+      top.classList.add("scrolling__appear");
 
-    setTimeout(() => logging(), 1000)
+      setTimeout(() => logging(), 1000)
 
-        function logging (){
-		  top.classList.remove("scrolling__appear");
-          lottie_appear.classList.remove("lottie__appear");
+      function logging() {
+        top.classList.remove("scrolling__appear");
+        lottie_appear.classList.remove("lottie__appear");
       };
-  });
+    });
   </script>
   <header>
     <div class="menu__box">
       <div class="menu__flex menu__open">
-        <div id="menu__drawer--input" class="menu__drawer--open menu__open"><span class="drawer__input__span menu__open"></span></div>
+        <div id="menu__drawer--input" class="menu__drawer--open menu__open"><span
+            class="drawer__input__span menu__open"></span></div>
         <p class="menu__title menu__open">menu</p>
       </div>
       <div class="menu__nav menu__open">
@@ -57,55 +60,59 @@
     </div>
   </header>
   <div id="menu__bg" class=" menu__open"></div>
-<main>
-  <!-- header -->
-  <div id="icon__right__return--button">
-    <p class="return__button__text"><a href="#top" class="return__button__link">Top</a></p>
-  </div>
-  <!-- scroll -->
-  <article id="worktop" class="worktop pt-60">
-  <h2 class="about__headline">work</h2>
-    <section class="worktop__box1">
-      <div class="worktop__text">
-        <h3 class="worktop__text__headline">和菓子屋架空<span class="worktop__text__headline__span">サイト</span></h3>
-        <div class="worktop__text--p mt-30">
-          <div class="worktop__1__tag">
-            <p class="worktop__1__tag__text">#WEB</p>
-            <p class="worktop__1__tag__text">#デザイン</p>
+  <main>
+    <!-- header -->
+    <div id="icon__right__return--button">
+      <p class="return__button__text"><a href="#top" class="return__button__link">Top</a></p>
+    </div>
+    <!-- scroll -->
+    <article id="worktop" class="worktop pt-60">
+      <h2 class="about__headline">work</h2>
+      <section class="worktop__box1">
+        <div class="worktop__text">
+          <h3 class="worktop__text__headline">和菓子屋架空<span class="worktop__text__headline__span">サイト</span></h3>
+          <div class="worktop__text--p mt-30">
+            <div class="worktop__1__tag">
+              <p class="worktop__1__tag__text">#WEB</p>
+              <p class="worktop__1__tag__text">#デザイン</p>
+            </div>
+            <button class="worktop__button"><a href="work1.html" class="worktop__button__link">more</a></button>
           </div>
-          <button class="worktop__button"><a href="work1.html" class="worktop__button__link">more</a></button>
         </div>
-      </div>
-      <a href="work1.html" class="worktop__image__box worktop__image__box__r"><img src="images/wagashi_pc_midashi.png" alt="和菓子屋架空サイト" class="worktop__img__1"></a>
-    </section>
-    <section class="worktop__box">
-    <div class="worktop__text worktop__text__l">
-        <h3 class="worktop__text__headline">カフェ<span class="worktop__text__headline__span1">オープン</span><span class="worktop__text__headline__span">チラシ</span></h3>
-        <div class="worktop__text--p mt-30">
-          <div class="worktop__1__tag">
-            <p class="worktop__1__tag__text">#DTP</p>
-            <p class="worktop__1__tag__text">#ロゴ</p>
+        <a href="work1.html" class="worktop__image__box worktop__image__box__r"><img src="images/wagashi_pc_midashi.png"
+            alt="和菓子屋架空サイト" class="worktop__img__1"></a>
+      </section>
+      <section class="worktop__box">
+        <div class="worktop__text worktop__text__l">
+          <h3 class="worktop__text__headline">カフェ<span class="worktop__text__headline__span1">オープン</span><span
+              class="worktop__text__headline__span">チラシ</span></h3>
+          <div class="worktop__text--p mt-30">
+            <div class="worktop__1__tag">
+              <p class="worktop__1__tag__text">#DTP</p>
+              <p class="worktop__1__tag__text">#ロゴ</p>
+            </div>
+            <button class="worktop__button"><a href="work2.html" class="worktop__button__link">more</a></button>
           </div>
-          <button class="worktop__button"><a href="work2.html" class="worktop__button__link">more</a></button>
         </div>
-      </div>
-      <a href="work2.html" class="worktop__image__box__js worktop__image__box__js__2 worktop__image__box__l"><img src="images/cafe_open_midashi.png" alt="カフェオープンチラシ" class="worktop__img__l worktop__img"></a>
-    </section>
-    <section class="worktop__box">
-      <div class="worktop__text">
-        <h3 class="worktop__text__headline">portfolio<span class="worktop__text__headline__span">サイト</span></h3>
-        <div class="worktop__text--p mt-30">
-          <div class="worktop__1__tag">
-            <p class="worktop__1__tag__text">#WEB</p>
-            <p class="worktop__1__tag__text">#デザイン</p>
+        <a href="work2.html" class="worktop__image__box__js worktop__image__box__js__2 worktop__image__box__l"><img
+            src="images/cafe_open_midashi.png" alt="カフェオープンチラシ" class="worktop__img__l worktop__img"></a>
+      </section>
+      <section class="worktop__box">
+        <div class="worktop__text">
+          <h3 class="worktop__text__headline">portfolio<span class="worktop__text__headline__span">サイト</span></h3>
+          <div class="worktop__text--p mt-30">
+            <div class="worktop__1__tag">
+              <p class="worktop__1__tag__text">#WEB</p>
+              <p class="worktop__1__tag__text">#デザイン</p>
+            </div>
+            <button class="worktop__button"><a href="work3.html" class="worktop__button__link">more</a></button>
           </div>
-          <button class="worktop__button"><a href="work3.html" class="worktop__button__link">more</a></button>
         </div>
-      </div>
-      <a href="work3.html" class="worktop__image__box__js worktop__image__box__js__3 worktop__image__box__r"><img src="images/portfolio_pc_midashi.png" alt="portfolioサイト" class="worktop__img__r worktop__img"></a>
-    </section>
-  </article>
-</main>
+        <a href="work3.html" class="worktop__image__box__js worktop__image__box__js__3 worktop__image__box__r"><img
+            src="images/portfolio_pc_midashi.png" alt="portfolioサイト" class="worktop__img__r worktop__img"></a>
+      </section>
+    </article>
+  </main>
   <!-- worktop -->
   <footer class="footer__worktop">
     <p>All&nbsp;Rights&nbsp;Reserved<span class="footer__text">&nbsp;2023&copy;AYA&nbsp;NURUYU</span></p>
@@ -113,4 +120,5 @@
   <!-- footer -->
   <script type="text/javascript" src="javascript/javascript.js"></script>
 </body>
+
 </html>
