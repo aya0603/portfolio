@@ -65,7 +65,7 @@ body {
 }
 
 .ml-7 {
-    margin-left: 7vw;
+    margin-left: 7%;
 }
 
 .mt-540 {
@@ -73,7 +73,7 @@ body {
 }
 
 .mr-11 {
-    margin-right: 11vw;
+    margin-right: 11%;
 }
 
 /* load */
@@ -1141,6 +1141,14 @@ body {
     align-items: flex-end;
     scroll-margin-top: 150px;
     margin-top: 450px;
+    max-width: 1366px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.form__box{
+    max-width: 960px;
 }
 
 .tel {
@@ -1209,21 +1217,25 @@ body {
 }
 
 .mail__text__name--input {
+    max-width: 400px;
     border-radius: 10px;
     width: 30vw;
 }
 
 .mail__text__mail--input {
+    max-width: 400px;
     border-radius: 10px;
     width: 30vw;
 }
 
 .mail__text__tel--input {
+    max-width: 400px;
     border-radius: 10px;
     width: 30vw;
 }
 
 .mail__text__message--input {
+    max-width: 400px;
     border-radius: 10px;
     width: 30vw;
     height: 150px;
