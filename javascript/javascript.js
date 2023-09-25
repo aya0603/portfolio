@@ -145,12 +145,12 @@ if (windowSize > 768) {
   document.addEventListener('mousemove', function (e) {
     cursor.style.opacity = .5;
     cursor.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
-    for (let a = 0; a < link.length; a++) {
+    for (let a = 0; a < cursor_none.length; a++) {
       cursor_none[a].classList.add('cursor_none');
     };
   });
 
-  let link = document.querySelectorAll('a, .menu__drawer--open');
+  let link = document.querySelectorAll('a, .menu__drawer--open, .work__comp__pc__img, .work__comp__sp__img');
   for (let i = 0; i < link.length; i++) {
     link[i].addEventListener('mouseover', function (e) {
       cursor.classList.add('cursor--hover');
@@ -159,4 +159,28 @@ if (windowSize > 768) {
       cursor.classList.remove('cursor--hover');
     });
   }
+}
+
+//モーダル
+
+const modalWrapper = document.querySelector('.modal-wrapper');
+const images = document.querySelectorAll('.work__comp__pc__img, .work__comp__sp__img');
+const modalImage = document.querySelector('.modal-image');
+if (modalWrapper != null) {
+images.forEach(function(image) {
+     image.addEventListener('click', function() {
+          modalWrapper.classList.add('show');
+          modalImage.classList.add('show');
+
+          const imageSrc = image.getAttribute('data-src');
+          modalImage.src = imageSrc;
+     });
+});
+
+modalWrapper.addEventListener('click', function() {
+     if (this.classList.contains('show')) {
+          this.classList.remove('show');
+          modalImage.classList.remove('show');
+     }
+});
 }
